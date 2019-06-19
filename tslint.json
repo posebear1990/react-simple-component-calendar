@@ -1,0 +1,7 @@
+{
+  "extends": ["tslint:latest", "tslint-react"],
+  "rules": {
+    // 禁用每个接口以 I 开头
+    "interface-name": [true, "never-prefix"]
+  }
+}

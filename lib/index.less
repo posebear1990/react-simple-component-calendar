@@ -1,0 +1,43 @@
+.react-simple-component-calendar-container {
+  .react-simple-component-calendar-handle-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+    .react-simple-component-calendar-handle-prev,
+    .react-simple-component-calendar-handle-next {
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-basis: 14%;
+    }
+  }
+
+  .react-simple-component-calendar-table {
+    width: 100%;
+
+    td {
+      text-align: center;
+      vertical-align: middle;
+      height: 50px;
+
+      &.today {
+        > button {
+          border: 1px solid #00a0ad;
+        }
+      }
+    }
+
+    .react-simple-component-calendar-button {
+      border: none;
+      font-size: 13px;
+      transition: all 0.2s ease-out;
+      cursor: pointer;
+      background: none;
+      border-radius: 100%;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
