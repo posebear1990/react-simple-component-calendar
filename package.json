@@ -4,7 +4,7 @@
   "description": "A Simple React Calendar Panel Component",
   "main": "lib/index.js",
   "scripts": {
-    "build": "rm -rf ./lib/* && npx babel ./src --out-dir ./lib --extensions \".ts,.tsx\" && cp ./src/*.less ./lib/",
+    "build": "tsc && cp ./src/*.less ./lib/",
     "dev": "webpack-dev-server --progress --hot --config webpack.dev.js --devtool source-map",
     "prod": "webpack --config webpack.prod.js",
     "test": "jest"
