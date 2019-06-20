@@ -13,7 +13,7 @@ export interface Props {
   onClick: (date: Date, item: ListItem) => void;
 }
 
-function Calendar({ list, now, onClick }: Props) {
+export default function Calendar({ list, now, onClick }: Props) {
   const timeMap = useMemo(() => {
     const result = new Map();
 
@@ -84,9 +84,3 @@ function Calendar({ list, now, onClick }: Props) {
     </div>
   );
 }
-
-export default React.memo(Calendar, (prevProps, currentProps) => {
-  console.log(prevProps, currentProps);
-
-  return false;
-});
